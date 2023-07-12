@@ -19,7 +19,6 @@ function createGallery(items) {
   </a>
 </li>`).join("")
 }
- 
 
 
 galleryUl.addEventListener("click", onImageClick);
@@ -31,21 +30,17 @@ function onImageClick(e) {
         return;
     }
 
-}
-
-
 const modalEl = e.target.dataset.source;
-
-instance = basicLightbox.create(`
+const instance = basicLightbox.create(`
     <div class="modal">
-        <img src="${modalEl}" width = "1200" height = "800">
+        <img src="${modalEl}"width ="1200" height ="800">
     </div>
 `)
 
-instance.show()
+    instance.show()
 
 
 
 
 
-
+}
